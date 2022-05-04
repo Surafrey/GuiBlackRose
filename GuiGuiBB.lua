@@ -704,8 +704,8 @@ function library:CreateWindow(options, ...)
 	local windowoptions = options
 	local windowName = options.Name or "Unnamed Window"
 	options.Name = windowName
-	if windowName and #windowName > 0 and library.WorkspaceName == "Xenon Hub Premium Scripts" then
-		library.WorkspaceName = convertfilename(windowName, "Xenon Hub Premium Scripts")
+	if windowName and #windowName > 0 and library.WorkspaceName == "BlackLua Scripts" then
+		library.WorkspaceName = convertfilename(windowName, "BlackLua Scripts")
 	end
 	local pepsiLibrary = Instance_new("ScreenGui")
 	local main = Instance_new("Frame")
@@ -3623,14 +3623,14 @@ function library:CreateWindow(options, ...)
 					local realDropdownHolder = Instance_new("ScrollingFrame")
 					local realDropdownHolderList = Instance_new("UIListLayout")
 					local dropdownEnabled = false
-					if not isfolder("./Xenon Hub Premium Scripts") then
-						makefolder("./Xenon Hub Premium Scripts")
+					if not isfolder("./BlackLua Scripts") then
+						makefolder("./BlackLua Scripts")
 					end
-					local common_string = "./Xenon Hub Premium Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
+					local common_string = "./BlackLua Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
 					local function resolvelist(nofold)
 						if custom_workspace ~= options.Workspace then
 							custom_workspace = options.Workspace
-							common_string = "./Xenon Hub Premium Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
+							common_string = "./BlackLua Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
 						end
 						if not isfolder or not makefolder or not listfiles then
 							return {}
@@ -5740,7 +5740,7 @@ function library:CreateWindow(options, ...)
 		}}, {"AddPersistence", "__Designer.Persistence.ThemeFile", filessection, {
 			Name = "Theme Profile",
 			Flag = "__Designer.Files.ThemeFile",
-			Workspace = "Xenon Hub Premium Scripts Themes",
+			Workspace = "BlackLua Scripts Themes",
 			Flags = flags,
 			Suffix = "Theme",
 			Desginer = true
