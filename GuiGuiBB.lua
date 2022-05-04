@@ -5713,7 +5713,7 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://9538090199",
+			Placeholder = "rbxassetid://9538090191",
 			Flag = "__Designer.Background.ImageAssetID",
 			Value = "rbxassetid://9538090199",
 			Callback = updatecolorsnotween
@@ -5726,7 +5726,7 @@ function library:CreateWindow(options, ...)
 		}}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
 			Name = "Image Transparency",
 			Flag = "__Designer.Background.ImageTransparency",
-			Value = 65,
+			Value = 35,
 			Min = 0,
 			Max = 100,
 			Format = "Image Transparency : %s%%",
