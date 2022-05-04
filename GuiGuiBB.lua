@@ -778,7 +778,7 @@ function library:CreateWindow(options, ...)
 	innerBackdrop.Parent = innerMainHolder
 	innerBackdrop.BackgroundColor3 = Color3.new(1, 1, 1)
 	innerBackdrop.BackgroundTransparency = 1
-	innerBackdrop.Size = UDim2.fromScale(1, 1)
+	innerBackdrop.Size = UDim2.fromScale(1, 1)w
 	innerBackdrop.ZIndex = -1
 	innerBackdrop.Visible = not not library_flags["__Designer.Background.UseBackgroundImage"]
 	innerBackdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(1, 1, 1)
