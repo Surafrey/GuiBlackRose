@@ -704,8 +704,8 @@ function library:CreateWindow(options, ...)
 	local windowoptions = options
 	local windowName = options.Name or "Unnamed Window"
 	options.Name = windowName
-	if windowName and #windowName > 0 and library.WorkspaceName == "Xenon Hub Premium Scripts" then
-		library.WorkspaceName = convertfilename(windowName, "Xenon Hub Premium Scripts")
+	if windowName and #windowName > 0 and library.WorkspaceName == "BlackLua : Src Free" then
+		library.WorkspaceName = convertfilename(windowName, "BlackLua : Src Free")
 	end
 	local pepsiLibrary = Instance_new("ScreenGui")
 	local main = Instance_new("Frame")
@@ -2707,7 +2707,7 @@ function library:CreateWindow(options, ...)
 					textbox.Position = UDim2.new(1, -54, 0.48)
 					textbox.Selectable = true
 					textbox.Size = UDim2.fromOffset(43, 18)
-					textbox.Image = "rbxassetid://9538090199"
+					textbox.Image = "rbxassetid://9538090191"
 					textbox.ImageColor3 = library.colors.bottomGradient
 					local colored_textbox_ImageColor3 = {textbox, "ImageColor3", "bottomGradient"}
 					colored[1 + #colored] = colored_textbox_ImageColor3
@@ -3623,14 +3623,14 @@ function library:CreateWindow(options, ...)
 					local realDropdownHolder = Instance_new("ScrollingFrame")
 					local realDropdownHolderList = Instance_new("UIListLayout")
 					local dropdownEnabled = false
-					if not isfolder("./Xenon Hub Premium Scripts") then
-						makefolder("./Xenon Hub Premium Scripts")
+					if not isfolder("./BlackLua : Src Free") then
+						makefolder("./BlackLua : Src Free")
 					end
-					local common_string = "./Xenon Hub Premium Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
+					local common_string = "./BlackLua : Src Free/" .. tostring(custom_workspace or library.WorkspaceName)
 					local function resolvelist(nofold)
 						if custom_workspace ~= options.Workspace then
 							custom_workspace = options.Workspace
-							common_string = "./Xenon Hub Premium Scripts/" .. tostring(custom_workspace or library.WorkspaceName)
+							common_string = "./ BlackLua : Src Free/" .. tostring(custom_workspace or library.WorkspaceName)
 						end
 						if not isfolder or not makefolder or not listfiles then
 							return {}
@@ -5713,7 +5713,7 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://9538090191",
+			Placeholder = "rbxassetid://9538090199",
 			Flag = "__Designer.Background.ImageAssetID",
 			Value = "rbxassetid://9538090199",
 			Callback = updatecolorsnotween
@@ -5740,7 +5740,7 @@ function library:CreateWindow(options, ...)
 		}}, {"AddPersistence", "__Designer.Persistence.ThemeFile", filessection, {
 			Name = "Theme Profile",
 			Flag = "__Designer.Files.ThemeFile",
-			Workspace = "Xenon Hub Premium Scripts Themes",
+			Workspace = "BlackLua : Src Free",
 			Flags = flags,
 			Suffix = "Theme",
 			Desginer = true
