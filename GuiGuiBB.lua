@@ -1126,7 +1126,7 @@ function library:CreateWindow(options, ...)
 				toggle.Position = UDim2.fromScale(0.0308237672, 0.165842205)
 				toggle.Selectable = true
 				toggle.Size = UDim2.fromOffset(12, 12)
-				toggle.Image = "rbxassetid://9538090191"
+				toggle.Image = "rbxassetid://9538090199"
 				toggle.ImageColor3 = library.colors.bottomGradient
 				local colored_toggle_ImageColor3 = {toggle, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_toggle_ImageColor3
@@ -1142,7 +1142,7 @@ function library:CreateWindow(options, ...)
 				toggleInner.Position = UDim2.fromScale(0.5, 0.5)
 				toggleInner.Selectable = true
 				toggleInner.Size = UDim2.new(1, -4, 1, -4)
-				toggleInner.Image = "rbxassetid://9538090199"
+				toggleInner.Image = "rbxassetid://9538090191"
 				toggleInner.ImageColor3 = library.colors.bottomGradient
 				local colored_toggleInner_ImageColor3 = {toggleInner, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_toggleInner_ImageColor3
