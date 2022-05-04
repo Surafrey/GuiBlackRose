@@ -792,7 +792,7 @@ function library:CreateWindow(options, ...)
 	tabsHolder.BorderSizePixel = 0
 	tabsHolder.Position = UDim2.fromOffset(1, 1)
 	tabsHolder.Size = UDim2.new(1, -2, 0, 23)
-	tabsHolder.Image = "rbxassetid://9538090199"
+	tabsHolder.Image = "rbxassetid://9538090191"
 	tabsHolder.ImageColor3 = library.colors.bottomGradient
 	colored[1 + #colored] = {tabsHolder, "ImageColor3", "bottomGradient"}
 	tabHolderList.Name = "tabHolderList"
@@ -2722,7 +2722,7 @@ function library:CreateWindow(options, ...)
 					textboxInner.Position = UDim2.fromScale(0.5, 0.5)
 					textboxInner.Selectable = true
 					textboxInner.Size = UDim2.new(1, -4, 1, -4)
-					textboxInner.Image = "rbxassetid://9538090191"
+					textboxInner.Image = "rbxassetid://9538090199"
 					textboxInner.ImageColor3 = library.colors.bottomGradient
 					colored[1 + #colored] = {textboxInner, "ImageColor3", "bottomGradient"}
 					realTextbox.Name = "realTextbox"
