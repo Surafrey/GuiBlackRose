@@ -778,7 +778,7 @@ function library:CreateWindow(options, ...)
 	innerBackdrop.Parent = innerMainHolder
 	innerBackdrop.BackgroundColor3 = Color3.new(1, 1, 1)
 	innerBackdrop.BackgroundTransparency = 1
-	innerBackdrop.Size = UDim2.fromScale(1, 1)w
+	innerBackdrop.Size = UDim2.fromScale(1, 1)
 	innerBackdrop.ZIndex = -1
 	innerBackdrop.Visible = not not library_flags["__Designer.Background.UseBackgroundImage"]
 	innerBackdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(1, 1, 1)
@@ -792,7 +792,7 @@ function library:CreateWindow(options, ...)
 	tabsHolder.BorderSizePixel = 0
 	tabsHolder.Position = UDim2.fromOffset(1, 1)
 	tabsHolder.Size = UDim2.new(1, -2, 0, 23)
-	tabsHolder.Image = "rbxassetid://9538090199"
+	tabsHolder.Image = "rbxassetid://9538090191"
 	tabsHolder.ImageColor3 = library.colors.bottomGradient
 	colored[1 + #colored] = {tabsHolder, "ImageColor3", "bottomGradient"}
 	tabHolderList.Name = "tabHolderList"
@@ -5715,7 +5715,7 @@ function library:CreateWindow(options, ...)
 			Name = "Image Asset ID",
 			Placeholder = "rbxassetid://9538090199",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://9538090199",
+			Value = "rbxassetid://9538090191",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
