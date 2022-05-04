@@ -2707,7 +2707,7 @@ function library:CreateWindow(options, ...)
 					textbox.Position = UDim2.new(1, -54, 0.48)
 					textbox.Selectable = true
 					textbox.Size = UDim2.fromOffset(43, 18)
-					textbox.Image = "rbxassetid://9538090191"
+					textbox.Image = "rbxassetid://9538090199"
 					textbox.ImageColor3 = library.colors.bottomGradient
 					local colored_textbox_ImageColor3 = {textbox, "ImageColor3", "bottomGradient"}
 					colored[1 + #colored] = colored_textbox_ImageColor3
@@ -2722,7 +2722,7 @@ function library:CreateWindow(options, ...)
 					textboxInner.Position = UDim2.fromScale(0.5, 0.5)
 					textboxInner.Selectable = true
 					textboxInner.Size = UDim2.new(1, -4, 1, -4)
-					textboxInner.Image = "rbxassetid://9538090199"
+					textboxInner.Image = "rbxassetid://9538090191"
 					textboxInner.ImageColor3 = library.colors.bottomGradient
 					colored[1 + #colored] = {textboxInner, "ImageColor3", "bottomGradient"}
 					realTextbox.Name = "realTextbox"
